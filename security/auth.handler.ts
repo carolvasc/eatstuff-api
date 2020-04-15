@@ -11,7 +11,7 @@ export const authenticate: restify.RequestHandler = (req, resp, next)=>{
       if(user && user.matches(password)){ //2nd
         //gerar o token
         //3rd
-        const token = jwt.sign({sub: user.email, iss: 'meat-api'},
+        const token = jwt.sign({sub: user.email, iss: 'eatstuff-api'},
                   environment.security.apiSecret)
         resp.json({name: user.name, email: user.email, accessToken: token})
         return next(false)
