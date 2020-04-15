@@ -1,5 +1,5 @@
 {
-  "name": "eatStuff-api",
+  "name": "eatstuff-api",
   "version": 2,
   "env": {
     "MONGODB_URI": "@eatstuff-uri"
