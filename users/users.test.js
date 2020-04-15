@@ -1,9 +1,8 @@
+"use strict";
 // import 'jest'
 // import * as request from 'supertest'
-
 // const address: string = (<any>global).address
 // const auth: string = (<any>global).auth
-
 // test('get /users', ()=>{
 //   return request(address)
 //      .get('/users')
@@ -13,7 +12,6 @@
 //       expect(response.body.items).toBeInstanceOf(Array)
 //      }).catch(fail)
 // })
-
 // test('post /users', ()=>{
 //   return request(address)
 //      .post('/users')
@@ -33,7 +31,6 @@
 //         expect(response.body.password).toBeUndefined()
 //      }).catch(fail)
 // })
-
 // test('post /users - nome obrigatorio', ()=>{
 //   return request(address)
 //             .post('/users')
@@ -50,8 +47,6 @@
 //             })
 //             .catch(fail)
 // })
-
-
 // /* Primeiro cria-se um novo usuário.
 //    Depois filtra-se por email na expectativa de retornar apenas
 //    o que tiver o email identico.
@@ -75,7 +70,6 @@
 //                        expect(response.body.items[0].email).toBe('usuario3@email.com')
 //              }).catch(fail)
 // })
-
 // test('get /users/aaaaa - not found', ()=>{
 //   return request(address)
 //      .get('/users/aaaaa')
@@ -84,7 +78,6 @@
 //       expect(response.status).toBe(404)
 //      }).catch(fail)
 // })
-
 // test('get /users/:id', ()=>{
 //   return request(address)
 //             .post('/users')
@@ -104,7 +97,6 @@
 //                        expect(response.body.password).toBeUndefined()
 //            }).catch(fail)
 // })
-
 // test('delete /users/aaaaa - not found', ()=>{
 //   return request(address)
 //           .delete(`/users/aaaaa`)
@@ -113,7 +105,6 @@
 //                 expect(response.status).toBe(404)
 //            }).catch(fail)
 // })
-
 // test('delete /users:/id', ()=>{
 //   return request(address)
 //             .post('/users')
@@ -129,9 +120,7 @@
 //               .then(response=>{
 //                 expect(response.status).toBe(204)
 //            }).catch(fail)
-
 // })
-
 // test('patch /users/aaaaa - not found', ()=>{
 //   return request(address)
 //           .patch(`/users/aaaaa`)
@@ -140,7 +129,6 @@
 //                 expect(response.status).toBe(404)
 //            }).catch(fail)
 // })
-
 // test('post /users - cpf invalido', ()=>{
 //   return request(address)
 //             .post('/users')
@@ -159,7 +147,6 @@
 //             })
 //             .catch(fail)
 // })
-
 // test('post /users - email duplicado', ()=>{
 //   return request(address)
 //             .post('/users')
@@ -185,9 +172,6 @@
 //             })
 //             .catch(fail)
 // })
-
-
-
 // test('patch /users/:id', ()=>{
 //   return request(address)
 //      .post('/users')
@@ -212,7 +196,6 @@
 //      })
 //      .catch(fail)
 // })
-
 // test('put /users/aaaaa - not found', ()=>{
 //   return request(address)
 //           .put(`/users/aaaaa`)
@@ -221,7 +204,6 @@
 //                 expect(response.status).toBe(404)
 //            }).catch(fail)
 // })
-
 // /*
 //   1. Cria-se um usuario com gender Male
 //   2. Atualiza, mas nao informa gender
@@ -254,9 +236,7 @@
 //                        expect(response.body.gender).toBeUndefined()
 //                        expect(response.body.password).toBeUndefined()
 //             }).catch(fail)
-
 // })
-
 // test('authenticate user - not authorized', ()=>{
 //   return request(address)
 //      .post('/users/authenticate')
@@ -268,7 +248,6 @@
 //         expect(response.status).toBe(403)
 //      }).catch(fail)
 // })
-
 // test('authenticate user', ()=>{
 //   return request(address)
 //      .post('/users/authenticate')

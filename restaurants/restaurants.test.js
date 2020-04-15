@@ -1,12 +1,10 @@
+"use strict";
 // import 'jest'
-
 // import * as mongoose from 'mongoose'
 // import * as request from 'supertest'
 // import {environment} from '../common/environment'
-
 // let address: string = (<any>global).address
 // const auth: string = (<any>global).auth
-
 // test('get /restaurants', ()=>{
 //   return request(address)
 //          .get('/restaurants')
@@ -16,7 +14,6 @@
 //          })
 //          .catch(fail)
 // })
-
 // test('get /restaurants/aaaaa - not found', ()=>{
 //   return request(address)
 //          .get('/restaurants/aaaaa')
@@ -25,11 +22,9 @@
 //          })
 //          .catch(fail)
 // })
-
 // /*
 //   Exemplo de como pode ser um post para restaurants
 // */
-
 // test('post /restaurants', ()=>{
 //   return request(address)
 //             .post('/restaurants')
