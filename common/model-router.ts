@@ -84,14 +84,14 @@ export abstract class ModelRouter<D extends mongoose.Document> extends Router {
   replace = (req, resp, next)=>{
     const options = {runValidators: true, overwrite: true}
     this.model.update({_id: req.params.id}, req.body, options)
-        .exec().then(result=>{
+        .exec().then(result =>{
       if(result.n){
-        return this.prepareOne(this.model.findById(req.params.id))
+        return this.prepareOne(this.model.findById(req.params.id)).exec();
       } else{
-        throw new NotFoundError('Documento não encontrado')
+        throw new NotFoundError('Documento não encontrado');
       }
     }).then(this.render(resp, next))
-      .catch(next)
+      .catch(next);
   }
 
   update = (req, resp, next)=>{
