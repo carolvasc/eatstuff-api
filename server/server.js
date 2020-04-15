@@ -12,9 +12,7 @@ var Server = /** @class */ (function () {
     }
     Server.prototype.initializeDb = function () {
         mongoose.Promise = global.Promise;
-        return mongoose.connect(environment_1.environment.db.url, {
-            useMongoClient: true
-        });
+        return mongoose.connect(environment_1.environment.db.url);
     };
     Server.prototype.initRoutes = function (routers) {
         var _this = this;
